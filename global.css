@@ -1,0 +1,126 @@
+h1,
+h2,
+h3 {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+}
+
+h2 > a {
+  color: inherit;
+}
+
+a {
+  color: #7d4cdb;
+}
+
+em {
+  display: inline-block;
+  border-bottom: solid 3px #6fffb0;
+}
+
+blockquote {
+  font-size: 1.4em;
+  width: 90%;
+  margin: 50px auto;
+  /* font-family: Open Sans; */
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #ff5874;
+  line-height: 1.6;
+  position: relative;
+  background: #ededed;
+}
+
+blockquote::before {
+  /* font-family: Arial; */
+  content: "\201C";
+  color: #ff5874;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+blockquote::after {
+  content: "";
+}
+
+blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.with-shadow:before {
+  top: 0;
+  left: 0;
+  right: -3px;
+  z-index: -1;
+  bottom: -3px;
+  content: "\A";
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+  will-change: transform;
+  background-color: #fd49a0;
+  -webkit-transform: translate(-6px, -6px);
+  transform: translate(-6px, -6px);
+}
+
+.gatsby-highlight {
+  margin-bottom: 1.75rem;
+  margin-left: -1.3125rem;
+  margin-right: -1.3125rem;
+  background: #011627;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.gatsby-highlight:has(.line-numbers) {
+  padding-left: 0.5em;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  float: left;
+  min-width: 100%;
+}
+
+.gatsby-highlight-code-line {
+  background-color: hsla(207, 95%, 15%, 1);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.4em solid #f99;
+}
+
+/* Adjust the position of the line numbers */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
+/* For shell prompt */
+.command-line-prompt > span:before {
+  color: #999;
+  content: " ";
+  display: block;
+  padding-right: 0.8em;
+}
+
+/* Prompt for all users */
+.command-line-prompt > span[data-user]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] $";
+}
+
+/* Prompt for root */
+.command-line-prompt > span[data-user="root"]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] #";
+}
+
+.command-line-prompt > span[data-prompt]:before {
+  content: attr(data-prompt);
+}
