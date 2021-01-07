@@ -1,6 +1,6 @@
 ---
 title: Hello 2021
-date: "2021-1-7T22:00:03.284Z"
+date: "2021-01-07T22:00:03.284Z"
 description: "My 2021 goals and aspirations"
 featuredImage: "./2021.jpg"
 ---
