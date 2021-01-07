@@ -63,9 +63,9 @@ const Bio = () => {
         }}
       />
       <p style={{ margin: 0, marginBlockEnd: 0 }}>
-        Hi I'm <strong>{author}</strong>! I live and work in Kuala Lumpur 🇲🇾. I
-        write codes for the web, and have lots of ❤️for React, GraphQL, and
-        recently Flutter.
+        Hi I'm <strong>{author}</strong>! I live and work in Kuala Lumpur,
+        Malaysia 🇲🇾. I build web and mobile apps, and have lots of ❤️ for React
+        and Flutter.
       </p>
       {/* </div> */}
     </Box>
